@@ -881,6 +881,7 @@ class _MoviesTabState extends State<MoviesTab> {
       child: Image.network(
         url,
         fit: BoxFit.cover,
+        webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
         errorBuilder: (context, error, stack) => icon,
       ),
     );
@@ -1061,6 +1062,7 @@ class _BooksTabState extends State<BooksTab> {
       height: 56,
       child: Image.network(
         'https://covers.openlibrary.org/b/id/$id-M.jpg',
+        webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
         fit: BoxFit.cover,
         errorBuilder: (context, error, stack) => icon,
       ),
@@ -1361,6 +1363,7 @@ class _PickDetailScreenState extends State<PickDetailScreen> {
         url,
         height: 240,
         fit: BoxFit.cover,
+        webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
         errorBuilder: (context, error, stack) => placeholder,
       ),
     );
