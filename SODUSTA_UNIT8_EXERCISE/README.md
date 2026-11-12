@@ -1,4 +1,4 @@
-# sodusta_unit7_exercise
+# sodusta_unit8_exercise
 
 A new Flutter project.
 
